@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+#header {
+    height: 150px;
+    width: 100vw;
+}
+
+#header-img {
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.container-fluid .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin: 0 10px;
+}
+
+#logo-name {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+#nav-bar {
+    position: fixed;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.navbar-nav li {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 2.5rem;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+#title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#form input {
+    margin: 0 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid #e0e4e9;
+}
+
+#features {
+    position: relative;
+    width: 50%;
+    font-family: 'PT Sans', sans-serif;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#how-its-work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+#pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+#pricing-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+@media(min-width: 40rem) {
+    #pricing {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* max-width: 100%;*/
+    }
+    #pricing-cards {
+        vertical-align: middle;
+        padding: 20px;
+    }
+    #price-nav {
+        max-width: 300px;
+        height: 150px;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 500;
+        overflow: hidden;
+        display: block;
+    }
+}
+
+.card-body h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    background: #BDC3CB;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid #e0e4e9;
+    vertical-align: middle;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+#footer {
+    background: #e0e4e9;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: capitalize;
+    line-height: 0.3rem;
+}
+
+.footer a {
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    margin-top: 0.6rem;
+}
+
+@media(min-width: 480px) and (max-width:320px) {
+    #footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+}
